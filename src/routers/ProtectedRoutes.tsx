@@ -6,6 +6,7 @@ const ProtectedRoutes = ({ children }: PropsWithChildren<object>) => {
   const location = useLocation();
   useEffect(() => {
     const tokenData = localStorage.getItem("token-admin");
+    router.push("https://www.hopetuyishime.com?utm_source=mybrandhope&utm_medium=portfolio_v1")
     if (!tokenData) {
       navigate("/login");
     } else {
